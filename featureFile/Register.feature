@@ -27,3 +27,18 @@ Scenario: Register on TestMe App
 	|ThoreUppu|
 	|abcd1234|
 	Then user click login
+	
+	
+	@searchproduct
+	Scenario: search for product
+	Given user open TestMeapp3
+	When user click signin1
+	And user enter credinatial as
+	|ThoreUppu|
+	|abcd1234|
+	And user click login1
+	And search product
+	|Head|
+	And click on find Details button
+	Then clicks on add to cart 
+	
