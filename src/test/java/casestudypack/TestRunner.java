@@ -6,8 +6,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="featureFile",glue= {"casestudypack"},tags="@searchproduct")
-
+@CucumberOptions(features="featureFile",glue= {"casestudypack"},tags="@searchproduct", plugin = {"pretty","json:target/cucumber.json"}
+)
 public class TestRunner {
 
 }
